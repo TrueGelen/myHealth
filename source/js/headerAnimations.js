@@ -92,20 +92,20 @@ window.addEventListener('load', () => {
 		if (android.phone.getBoundingClientRect().width > ios.phone.getBoundingClientRect().width) {
 			setSize(ios.phone, 'hide')
 			setSize(android.phone, 'show')
-			showOptions.right = parseInt(getPropertyOfElement(android.phone, 'right')) / widthOfScreen * 100
-			hideOptions.right = parseInt(getPropertyOfElement(ios.phone, 'right')) / widthOfScreen * 100
-			showOptions.top = parseInt(getPropertyOfElement(android.phone, 'top')) / widthOfScreen * 100
-			hideOptions.top = parseInt(getPropertyOfElement(ios.phone, 'top')) / widthOfScreen * 100
+			showOptions.right = parseFloat(getPropertyOfElement(android.phone, 'right')) / widthOfScreen * 100
+			hideOptions.right = parseFloat(getPropertyOfElement(ios.phone, 'right')) / widthOfScreen * 100
+			showOptions.top = parseFloat(getPropertyOfElement(android.phone, 'top')) / widthOfScreen * 100
+			hideOptions.top = parseFloat(getPropertyOfElement(ios.phone, 'top')) / widthOfScreen * 100
 			android.isShow = true
 			ios.isShow = false
 		}
 		else {
 			setSize(android.phone, 'hide')
 			setSize(ios.phone, 'show')
-			showOptions.right = parseInt(getPropertyOfElement(ios.phone, 'right')) / widthOfScreen * 100
-			hideOptions.right = parseInt(getPropertyOfElement(android.phone, 'right')) / widthOfScreen * 100
-			showOptions.top = parseInt(getPropertyOfElement(ios.phone, 'top')) / widthOfScreen * 100
-			hideOptions.top = parseInt(getPropertyOfElement(android.phone, 'top')) / widthOfScreen * 100
+			showOptions.right = parseFloat(getPropertyOfElement(ios.phone, 'right')) / widthOfScreen * 100
+			hideOptions.right = parseFloat(getPropertyOfElement(android.phone, 'right')) / widthOfScreen * 100
+			showOptions.top = parseFloat(getPropertyOfElement(ios.phone, 'top')) / widthOfScreen * 100
+			hideOptions.top = parseFloat(getPropertyOfElement(android.phone, 'top')) / widthOfScreen * 100
 			ios.isShow = true
 			android.isShow = false
 		}
