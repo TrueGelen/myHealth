@@ -142,7 +142,14 @@ gulp.task('browser-sync', function () {
 });
 
 gulp.task('cleanDist', async function () {
-    const deletedPaths = await del(['dist/**', '!dist/img', '!dist/fonts']);
+    const notToDel = [
+        'dist/**',
+        '!dist/img',
+        '!dist/fonts',
+        '!dist/svgSprite/headerWaves.svg',
+        '!dist/svgSprite/headerWavesSM.svg',
+    ]
+    const deletedPaths = await del(notToDel);
     console.log('Deleted files and directories:\n', deletedPaths.join('\n'));
 })
 
