@@ -1,11 +1,11 @@
 window.addEventListener('load', () => {
 
 	new GnativeCarousel({
-		itemsContainer: '#itemsContainer',
-		staticItem: '#staticItem',
-		btnsContainer: '#sliderBtns',
-		btnNext: '#sliderBtns-next',
-		btnPrev: '#sliderBtns-prev',
+		itemsContainer: '#GnativeCarousel__itemsContainer',
+		staticItem: '#GnativeCarousel__staticItem',
+		btnsContainer: '#GnativeCarousel__buttons',
+		btnNext: '#GnativeCarousel__btnNext',
+		btnPrev: '#GnativeCarousel__btnPrev',
 		animationTime: 400,
 		responsive: true,
 		breakpoints: [1360, 1100, 768]

@@ -8,18 +8,18 @@ window.addEventListener('load', () => {
 	let switchFlag = false
 
 	const android = {}
-	android.switcher = document.querySelector('#header_android')
+	android.switcher = document.querySelector('#osSwitcher__switch-android')
 	android.circle = android.switcher.querySelector('div');
 	android.text = android.switcher.querySelector('p');
-	android.phone = document.querySelector('#headerPhones_phone-android')
+	android.phone = document.querySelector('#osSwitcher__android')
 	android.isShow = true
 	android.name = 'android'
 
 	const ios = {}
-	ios.switcher = document.querySelector('#header_ios')
+	ios.switcher = document.querySelector('#osSwitcher__switch-ios')
 	ios.circle = ios.switcher.querySelector('div')
 	ios.text = ios.switcher.querySelector('p')
-	ios.phone = document.querySelector('#headerPhones_phone-ios')
+	ios.phone = document.querySelector('#osSwitcher__ios')
 	ios.isShow = false
 	ios.name = 'ios'
 
