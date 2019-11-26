@@ -108,8 +108,8 @@ gulp.task('styles', function () {
 
 gulp.task('makeSvgSprite', function () {
     return gulp.src('./source/svg/*.svg')
-        /*.pipe(svgmin())
-        .pipe(cheerio({
+        .pipe(svgmin())
+        /*.pipe(cheerio({
             run: function ($) {
                 $('[fill]').removeAttr('fill');
                 $('[stroke]').removeAttr('stroke');
@@ -146,8 +146,8 @@ gulp.task('cleanDist', async function () {
         'dist/**',
         '!dist/img',
         '!dist/fonts',
-        '!dist/svgSprite/headerWaves.svg',
-        '!dist/svgSprite/headerWavesSM.svg',
+        'dist/svgSprite/sprite.svg',
+        '!dist/svgSprite'
     ]
     const deletedPaths = await del(notToDel);
     console.log('Deleted files and directories:\n', deletedPaths.join('\n'));
