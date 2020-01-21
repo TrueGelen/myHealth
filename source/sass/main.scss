@@ -927,45 +927,33 @@ header{
 }
 
 .section1__slider{
+	position: absolute;
 	right: 90px;
 	top: 155px;		
-	width: 810px;
-	height: 710px;
 
 	@include lg1360-block{
-		width: 688px;
-		height: 603px;
 		right: 0;
 	}
 
 	@include lg-block{
-		width: 584px;
-		height: 512px;
 		right: 0;
 		top: 100px;
 	}
 
 	@include md-block{
-		width: 730px;
-		height: 640px;
 		right: auto;
 		top: auto;
-		bottom: 70px;
+		bottom: 20px;
 		left: 50%;
 		transform: translate(-50%);
 	}
 
 	@include sm-block{
-		width: 95vw;
-		height: 83.3vw;
-		bottom: 50px;
+		bottom: 0px;
 	}
 }
 
 .GnativeCarousel{
-	// background-color: rgba(0, 0, 0, 0.63);
-	// border: 1px solid yellow;
-	position: absolute;
 
 	&__staticItem{
 		position: absolute;
